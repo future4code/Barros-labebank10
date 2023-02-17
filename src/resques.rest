@@ -1,0 +1,36 @@
+### Teste
+GET http://localhost:8081/ping
+
+
+### Pegar Usuários
+GET http://localhost:8081/getUsers
+
+### Pegar saldo
+GET http://localhost:8081/balance
+
+
+
+
+###Criar usuário
+POST http://localhost:8081/createUsers
+Content-Type: application/json
+
+{ 
+
+    "name": "Esme", 
+    "cpf": "125..454-567-85",
+    "birthDate": "1980-03-12"
+    
+}
+
+###Adicionar  SALDO 
+POST http://localhost:8081/addbalance
+Content-Type: application/json
+
+{ 
+
+    "name": "Fagner Fontes",
+    "cpf": 98765432100, 
+    "balance": 10000
+    
+}
